@@ -102,10 +102,8 @@ func (l *Link) SetStartStopCallback(fn StartStopCallbackFn) {
 	C.abl_link_set_start_stop_callback(l.instance, (*[0]byte)(cbPtr), fnPtr)
 }
 
-func (l *Link) Clock() time.Duration {
-	microseconds := int64(C.abl_link_clock_micros(l.instance))
-
-	return time.Microsecond * time.Duration(microseconds)
+func (l *Link) Clock() time.Time {
+	return time.UnixMicro(int64(C.abl_link_clock_micros(l.instance)))
 }
 
 func (l *Link) CaptureAudioSessionState(state *SessionState) {
