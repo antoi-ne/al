@@ -3,6 +3,9 @@
 
 Go bindings for [Ableton Link](https://ableton.github.io/link/).
 
+> [!WARNING]
+> This module's API is currently in an experimental or unstable state and may undergo significant changes in future releases.
+
 ## Usage
 
 `al` uses the C extention of Ableton Link called `abl_link` but does not install it.
