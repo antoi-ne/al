@@ -1,7 +1,6 @@
 package al
 
 /*
-#cgo CFLAGS: -g -Wall
 #cgo LDFLAGS: -labl_link
 #include <abl_link.h>
 
