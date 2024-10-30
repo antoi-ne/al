@@ -3,8 +3,8 @@
 
 Go bindings for [Ableton Link](https://ableton.github.io/link/).
 
-> [!WARNING]
-> This module's API is currently in an experimental or unstable state and may undergo significant changes in future releases.
+> [!NOTE]
+> Development of this package has moved to [essaim-dev/al](https://github.com/essaim-dev/al).
 
 ## Usage
 
